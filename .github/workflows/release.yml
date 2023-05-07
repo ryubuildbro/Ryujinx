@@ -110,7 +110,7 @@ jobs:
           replacesArtifacts: true
           owner: ${{ env.RYUJINX_TARGET_RELEASE_CHANNEL_OWNER }}
           repo: ${{ env.RYUJINX_TARGET_RELEASE_CHANNEL_REPO }}
-          token: ${{ ${{ secrets.GITHUB_TOKEN }} }}
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Create tag
         uses: actions/github-script@v5
