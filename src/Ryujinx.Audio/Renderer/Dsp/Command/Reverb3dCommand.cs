@@ -211,7 +211,7 @@ namespace Ryujinx.Audio.Renderer.Dsp.Command
                         ProcessReverb3dStereo(ref state, outputBuffers, inputBuffers, context.SampleCount);
                         break;
                     case 4:
-                        ProcessReverb3dQuadraphonic(ref state, outputBuffers, inputBuffers, context.SampleCount);
+                        ProcessReverb3dStereo(ref state, outputBuffers, inputBuffers, context.SampleCount);
                         break;
                     case 6:
                         ProcessReverb3dSurround(ref state, outputBuffers, inputBuffers, context.SampleCount);

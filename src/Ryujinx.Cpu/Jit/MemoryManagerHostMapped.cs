@@ -137,7 +137,7 @@ namespace Ryujinx.Cpu.Jit
         {
             if (!ValidateAddressAndSize(va, size) || !IsRangeMappedImpl(va, size))
             {
-                throw new InvalidMemoryRegionException($"Not mapped: va=0x{va:X16}, size=0x{size:X16}");
+                //throw new InvalidMemoryRegionException($"Not mapped: va=0x{va:X16}, size=0x{size:X16}");
             }
         }
 
