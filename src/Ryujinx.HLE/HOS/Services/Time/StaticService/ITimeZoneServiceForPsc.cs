@@ -217,7 +217,7 @@ namespace Ryujinx.HLE.HOS.Services.Time.StaticService
         // ToCalendarTimeWithMyRule(nn::time::PosixTime) -> (nn::time::CalendarTime, nn::time::sf::CalendarAdditionalInfo)
         public ResultCode ToCalendarTimeWithMyRule(ServiceCtx context)
         {
-            DateTimeOffset.Now.ToUnixTimeSeconds();
+            long posixTime = DateTimeOffset.Now.ToUnixTimeSeconds();
 
             ResultCode resultCode = _timeZoneManager.ToCalendarTimeWithMyRules(posixTime, out CalendarInfo calendar);
 
